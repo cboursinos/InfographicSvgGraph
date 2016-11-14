@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Infographic</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">	
+    <script type="text/javascript">
+	</script>
+    <style type="text/css" media="screen">
+        html,
+		body { 
+		width: 100%; height: 100%;}
+		.my-svg-container{
+			 display: inline-block;
+			 position: relative;
+			 width: 50%;
+			 padding-bottom: 60%; /* depends on svg ratio, for my zebra height/width = 1.2 so padding-bottom = 50% * 1.2 = 60% */
+			 
+			 vertical-align: middle; /* top | middle | bottom ... do what you want */
+			}
+			.my-svg{ /* svg into : object, img or inline */
+			  display: block;
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%; /* only required for <img /> */
+			}
+			#circle5 { 
+				animation-delay: 2s; 
+			}
+			#circle5 { 
+				transform-origin: 517px 484px;
+			}
+			#circle5 { 
+				animation: grow 0.25s ease-in-out;
+				animation-fill-mode: backwards; 
+			}
+			
+    </style>
+</head>
+<body>
+<div class="row">
+<div class="col-md-6" style="margin-left:20px;">
+<div class=".my-svg-container" style="width:auto; height:400px;">
+	<svg class="my-svg" width="800" height="300" viewBox="0 0 800 300" preserveAspectRatio="xMinYMin meet"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+		<image xlink:href="./images/Disk1.png" id="image1" param="image1" x="0" y="200" height="50px" width="50px"/>
+		<g >
+		<!-- <rect width="80" x="0" y="255" height="30"class="GradientBorder" fill="url(#grad1)" /> -->
+			<text x="0" id="text1" y="275" font-family="Calibri" font-size="20" fill="black">100</text>
+		</g>
+		<g>
+			<line x1="45" y1="220" x2="149" y2="130" param="100"  marker-end="url(#triangle)"  id="line1" style="stroke:#9ede00; stroke-width:3"/>
+			
+		</g>
+		<image xlink:href="./images/cargo1.png" id="image2"  param="image2" x="150" y="70" height="65px" width="65px"/>
+		<g >
+		<!--	<rect width="80" x="150" y="35" height="30"class="GradientBorder" fill="url(#grad1)" />-->
+			<text x="150" y="55" id="text2"  font-family="Calibri" font-size="20" fill="black">111</text>
+		</g>
+		<g>
+		<line x1="215" y1="94" x2="325" y2="65" marker-end="url(#triangle)"  id="line2" style="stroke:#9ede00; stroke-width:3"/>
+		<circle cx="260" cy="80" r="8" id="circle2" fill="#9ede00" style="cursor:pointer; z-index:2;" onmouseover="fill_target2(evt)" onmouseout="fill_target3(evt)" />
+			<g id="lineText2" style="display:none;">
+			<!--	<rect width="170" x="170" y="25" height="30"class="GradientBorder" fill="url(#grad1)" /> -->
+				
+			</g>
+		</g>	
+		<image xlink:href="./images/1394651386_truck.png" id="image3"  param="image3" x="330" y="30" height="65px" width="65px"/><!-- onmouseover="fill_target(evt)" -->
+		<g >
+		<!--	<rect width="80" x="320" y="5" height="30"class="GradientBorder" fill="url(#grad1)" />-->
+			<text x="320" y="25" id="text3" font-family="Calibri" font-size="20" fill="black">120</text>
+		</g>
+		<g>
+		<line x1="386" y1="60" x2="490" y2="60" marker-end="url(#triangle)"  id="line3" style="stroke:#9ede00; stroke-width:3"/>
+		<circle cx="430" cy="60" r="8"  id="circle3" fill="#9ede00" style="cursor:pointer" onmouseover="fill_target4(evt)" onmouseout="fill_target5(evt)" />
+			<g id="lineText3" style="display:none;">
+			<!--	<rect width="170" x="420" y="05" height="30"class="GradientBorder" fill="url(#grad1)" /> -->
+				<text x="360" y="105" id="toolText3" font-family="Calibri" font-size="20" fill="black">Lorem ipce Amicum</text>
+			</g>
+		</g>	
+		<image xlink:href="./images/OOCL.png" id="image4" param="image4"  x="495" y="30" height="50px" width="50px"/>
+		<g >
+		<!--	<rect width="80" x="550" y="25" height="30"class="GradientBorder" fill="url(#grad1)" />-->
+			<text x="550" y="45" id="text4" font-family="Calibri" font-size="20" fill="black">130</text>
+		</g>
+		<g>
+		<line x1="542" y1="60" x2="645" y2="85" marker-end="url(#triangle)"  id="line4" style="stroke:#9ede00; stroke-width:3"/>
+		<circle cx="590" cy="72" r="8" id="circle4" fill="#9ede00" style="cursor:pointer" onmouseover="fill_target6(evt)" onmouseout="fill_target7(evt)" />
+			<g id="lineText4" style="display:none;">
+				<!--<rect width="170" x="610" y="45" height="30"class="GradientBorder" fill="url(#grad1)" /> -->
+				<text x="610" y="65" id="toolText4" font-family="Calibri" font-size="20" fill="black">Lorem ipce Amicum</text>
+			</g>
+		</g>	
+		<image xlink:href="./images/1.png" x="650" y="70" id="image5" param="image5" height="50px" width="50px"/>
+		<g >
+		<!--	<rect width="80" x="630" y="125" height="30"class="GradientBorder" fill="url(#grad1)" />-->
+			<text x="630" y="145" id="text5" font-family="Calibri" font-size="20" fill="black">150</text>
+		</g>
+		<g z-index="0">
+		<line x1="45" y1="220" x2="645" y2="95" render-order="1" marker-end="url(#triangle1)" id="line5"  id="onlyFive" style="stroke:#009dde; stroke-width:3; z-index=1;" />
+		<circle cx="350" cy="155" r="8" id="circle5" fill="#009dde" style="cursor:pointer" onmouseover="fill_target8(evt)" onmouseout="fill_target9(evt)" />
+			<g id="lineText5" style="display:none;">
+				<!--<rect width="170" x="210" y="105" height="30"class="GradientBorder" fill="url(#grad1)" /> -->
+				<text x="210" y="125" id="toolText5" font-family="Calibri" font-size="20" fill="black">Lorem ipce Amicum</text>
+			</g>
+		</g>	
+		<line x1="45" y1="220" x2="490" y2="75" marker-end="url(#triangle)" id="line6" id="onlyFour" style="stroke:#009dde; stroke-width:3; display:none;"/>
+		<line x1="45" y1="220" x2="330" y2="70" marker-end="url(#triangle)" id="line7" id="onlyThree" style="stroke:#009dde; stroke-width:3; display:none;"/>
+		<marker id="triangle" fill="#9ede00"
+		  viewBox="0 0 10 10" refX="0" refY="5" 
+		  markerUnits="strokeWidth"
+		  markerWidth="4" markerHeight="3"
+		  orient="auto">
+		  <path d="M 0 0 L 10 5 L 0 10 z" />
+		</marker>
+		<marker id="triangle1" fill="#009dde"
+		  viewBox="0 0 10 10" refX="0" refY="5" 
+		  markerUnits="strokeWidth"
+		  markerWidth="4" markerHeight="3"
+		  orient="auto">
+		  <path d="M 0 0 L 10 5 L 0 10 z" />
+		</marker>
+		<g>
+		  <defs>
+			<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+			  <stop offset="0%" style="stop-color:rgb(145,200,103);stop-opacity:1" />
+			  <stop offset="100%" style="stop-color:rgb(132,168,86);stop-opacity:1" />
+			</linearGradient>
+		  </defs>
+		</g>
+		<g id="tooltip1">
+		<circle cx="100" cy="170" r="8" id="circle1" fill="#9ede00" style="cursor:pointer;" onmouseover="fill_target(evt)" onmouseout="fill_target1(evt)" />
+		<g id="lineText1" style="display:none;">
+			<text x="20" y="145" id="toolText1" font-family="Calibri" font-size="20" fill="black">Lorem ipce Amicum</text>
+		</g>
+		</g>
+		<g id="tooltip2" style="display:none;">
+		<rect  x="300" y="75" height="150" width="170" class="GradientBorder" fill="url(#grad1)" />
+		<text x="300" y="107" id="toolText2" font-family="Calibri" font-size="20" fill="black">Lorem ipce Amicum</text>
+		<g>
+	</svg>
+</div>
+</div>
+</div>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left" onclick="changeTexts();">change text1</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left" onclick="changeTexts1();">change text2</button>
+
+<script>
+function fill_target1(evt){
+	$('#lineText1').css({'display': 'none'});
+	document.getElementById("circle1").setAttribute("r", "8");
+}
+
+function fill_target(evt){
+	$('#lineText1').css({'display': 'inherit'});
+	document.getElementById("circle1").setAttribute("r", "100");	
+}
+function fill_target3(evt) {
+	$('#tooltip2').css({'display': 'none'});
+}
+function fill_target2(evt){
+	$('#tooltip2').css({'display': 'inherit'});
+	
+}
+function fill_target5(evt)
+ {
+	$('#lineText3').css({'display': 'none'});
+}
+function fill_target4(evt)
+{
+	$('#lineText3').css({'display': 'inherit'});
+}
+function fill_target7(evt)
+ {
+	$('#lineText4').css({'display': 'none'});
+}
+function fill_target6(evt)
+{
+	$('#lineText4').css({'display': 'inherit'});
+}
+function fill_target9(evt)
+ {
+	$('#lineText5').css({'display': 'none'});
+}
+function fill_target8(evt)
+{
+	$('#lineText5').css({'display': 'inherit'});
+}
+
+function onlyThree(){
+$('#image4').css({'display': 'none'});
+$('#image5').css({'display': 'none'});
+$('#line5').css({'display': 'none'});
+$('#line3').css({'display': 'none'});
+$('#line4').css({'display': 'none'});
+$('#line7').css({'display': 'inherit'});
+$('#text5').css({'display': 'none'});
+$('#text4').css({'display': 'none'});
+$('#line6').css({'display': 'none'});
+}
+
+function onlyFour(){
+$('#image4').css({'display': 'inherit'});
+$('#image5').css({'display': 'none'});
+$('#line5').css({'display': 'none'});
+$('#line3').css({'display': 'inherit'});
+$('#line4').css({'display': 'none'});
+$('#line7').css({'display': 'none'});
+$('#line6').css({'display': 'inherit'});
+$('#text5').css({'display': 'none'});
+$('#text4').css({'display': 'inherit'});
+}
+
+function onlyFive(){
+$('#image4').css({'display': 'inherit'});
+$('#image5').css({'display': 'inherit'});
+$('#line5').css({'display': 'inherit'});
+$('#line3').css({'display': 'inherit'});
+$('#line4').css({'display': 'inherit'});
+$('#text5').css({'display': 'inherit'});
+$('#text4').css({'display': 'inherit'});
+$('#line6').css({'display': 'none'});
+$('#line7').css({'display': 'none'});
+}
+
+
+function changeTexts(){
+document.getElementById("text1").textContent = "new Value";			
+document.getElementById("text2").textContent = "new Value";
+document.getElementById("text3").textContent = "new Value";
+document.getElementById("text4").textContent = "new Value";
+document.getElementById("text5").textContent = "new Value";
+document.getElementById("toolText1").textContent = "new Value";
+document.getElementById("toolText2").textContent = "new Value";
+document.getElementById("toolText3").textContent = "new Value";
+document.getElementById("toolText4").textContent = "new Value";
+document.getElementById("toolText5").textContent = "new Value";
+}	
+function changeTexts1(){
+document.getElementById("text1").textContent = "new Value1";			
+document.getElementById("text2").textContent = "new Value1";
+document.getElementById("text3").textContent = "new Value1";
+document.getElementById("text4").textContent = "new Value1";
+document.getElementById("text5").textContent = "new Value1";
+document.getElementById("toolText1").textContent = "new Value1";
+document.getElementById("toolText2").textContent = "new Value1";
+document.getElementById("toolText3").textContent = "new Value1";
+document.getElementById("toolText4").textContent = "new Value1";
+document.getElementById("toolText5").textContent = "new Value1";
+}	
+	
+	
+</script>
+</body>
+</html>
